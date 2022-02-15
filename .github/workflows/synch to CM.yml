@@ -20,7 +20,7 @@ jobs:
     - name: Git-version
       run: git version
     - name: Git-remote-add
-      run: git remote add adobe https://shivgup-adobe-com:dfzk63fqlfxbdrrks5gxnofcxissjajkjo7nigl7orsruo2teygq@git.cloudmanager.adobe.com/acsaem/ShivaniGupta-p11202/
+      run: git remote add adobe https://shivgup-adobe-com:tdf63arye4isla7hhyp25p6nuchnwljx3oi2xe5r5lvpeea5xz7a@git.cloudmanager.adobe.com/acsaem/ShivaniGupta-p11202/
     - name: Git-fetch-all
       run: git fetch --all
     - name: Git-checkout-adobe
@@ -37,5 +37,5 @@ jobs:
       uses: ad-m/github-push-action@master
       with:
 # branch: sync-demo-master
-       repository: https://shivgup-adobe-com:dfzk63fqlfxbdrrks5gxnofcxissjajkjo7nigl7orsruo2teygq@git.cloudmanager.adobe.com/acsaem/ShivaniGupta-p11202
+       repository: https://shivgup-adobe-com:tdf63arye4isla7hhyp25p6nuchnwljx3oi2xe5r5lvpeea5xz7a@git.cloudmanager.adobe.com/acsaem/ShivaniGupta-p11202
        force: true
