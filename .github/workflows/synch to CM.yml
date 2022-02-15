@@ -24,17 +24,17 @@ jobs:
     - name: Git-fetch-all
       run: git fetch --all
     - name: Git-checkout-adobe
-      run: git checkout -b sync-demo-master
+      run: git checkout -b sync-demo-master adobe/poc-asset-link
     - name: set user
       run: |
         git config --global user.email "shivgup@adobe.com"
         git config --global user.name "shivgup-adobe-com"
     - name: Git-merge
       run: |
-        git merge master --allow-unrelated-histories
+        #git merge master --allow-unrelated-histories
         git fetch --unshallow origin
     - name: Push changes
-      uses: ad-m/github-push-action@master
+      uses: ad-m/github-push-action@poc-asset-link
       with:
 # branch: sync-demo-master
        repository: https://shivgup-adobe-com:tdf63arye4isla7hhyp25p6nuchnwljx3oi2xe5r5lvpeea5xz7a@git.cloudmanager.adobe.com/acsaem/ShivaniGupta-p11202
