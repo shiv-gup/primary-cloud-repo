@@ -1,0 +1,4 @@
+[submodule "shivani-sandbox-repo"]
+	path = shivani-sandbox-repo
+	url = https://git.cloudmanager.adobe.com/acsaem/shivani-sandbox-repo/
+	branch = main
