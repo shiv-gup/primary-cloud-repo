@@ -20,7 +20,7 @@ jobs:
     - name: Git-version
       run: git version
     - name: Git-remote-add
-      run: git remote add adobe https://git.cloudmanager.adobe.com/acsaem/ShivaniGupta-p11202/
+      run: git remote add adobe https://shivgup-adobe-com:dfzk63fqlfxbdrrks5gxnofcxissjajkjo7nigl7orsruo2teygq@git.cloudmanager.adobe.com/acsaem/ShivaniGupta-p11202/
     - name: Git-fetch-all
       run: git fetch --all
     - name: Git-checkout-adobe
