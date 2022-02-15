@@ -1,0 +1,41 @@
+name: Repo Sync
+
+# Only run on a push to this branch
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  # This workflow contains a single job called "build"
+  build:
+    # The type of runner that the job will run on
+    runs-on: ubuntu-latest
+
+    # Steps represent a sequence of tasks that will be executed as part of the job
+    steps:
+    # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+    - uses: actions/checkout@v2
+      with:
+        persist-credentials: false
+    - name: Git-version
+      run: git version
+    - name: Git-remote-add
+      run: git remote add adobe https://git.cloudmanager.adobe.com/acsaem/ShivaniGupta-p11202/
+    - name: Git-fetch-all
+      run: git fetch --all
+    - name: Git-checkout-adobe
+      run: git checkout -b sync-demo-master adobe/master
+    - name: set user
+      run: |
+        git config --global user.email "shivgup@adobe.com"
+        git config --global user.name "shivgup-adobe-com"
+    - name: Git-merge
+      run: |
+        git merge master --allow-unrelated-histories
+        git fetch --unshallow origin
+    - name: Push changes
+      uses: ad-m/github-push-action@master
+      with:
+# branch: sync-demo-master
+       repository: https://shivgup-adobe-com:dfzk63fqlfxbdrrks5gxnofcxissjajkjo7nigl7orsruo2teygq@git.cloudmanager.adobe.com/acsaem/ShivaniGupta-p11202
+       force: true
