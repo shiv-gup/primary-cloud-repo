@@ -1,0 +1,10 @@
+{
+    "scripts": [
+        "create path (sling:OrderedFolder) /content/dam/shivanigupta",
+        "create path (nt:unstructured) /content/dam/shivanigupta/jcr:content",
+        "set properties on /content/dam/shivanigupta/jcr:content",
+        "set cq:conf{String} to /conf/shivanigupta",
+        "set jcr:title{String} to \"Shivani Gupta\"",
+        "end"
+    ]
+}

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workspaceFilter version="1.0">
+    <filter root="/apps/shivanigupta/clientlibs"/>
+    <filter root="/apps/shivanigupta/components"/>
+    <filter root="/apps/shivanigupta/i18n"/>
+</workspaceFilter>

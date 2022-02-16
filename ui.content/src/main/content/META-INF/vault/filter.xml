@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workspaceFilter version="1.0">
+    <filter root="/conf/shivanigupta" mode="merge"/>
+    <filter root="/content/shivanigupta" mode="merge"/>
+    <filter root="/content/dam/shivanigupta/asset.jpg" mode="merge"/>
+    <filter root="/content/experience-fragments/shivanigupta" mode="merge"/>
+</workspaceFilter>
