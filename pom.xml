@@ -9,7 +9,7 @@
     <packaging>pom</packaging>
    
     <modules>
-        <module>shivani-sandbox-repo</module>
+        <module>shivani-sub-repo1</module>
     </modules>
    
 </project>
