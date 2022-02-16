@@ -1,0 +1,4 @@
+[submodule "shivani-sub-repo1"]
+	path = shivani-sub-repo1
+	url = https://git.cloudmanager.adobe.com/acsaem/shivani-sub-repo1/
+	branch = master
